@@ -1,0 +1,125 @@
+*{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #c7e694;
+    --primary-color-variant: #f8f8de;
+    --secondary-color: #b4dd7b;
+    --secondary-color-variant: #f8f8de;
+    --link-color: #ecf7c5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color-variant);
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 25px 10px;
+    color: var(--secondary-color-variant);
+}
+
+#conceito {
+    background-color: var(--primary-color);
+}
+
+#ODS3 {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+#dicas {
+    background-color: var(--primary-color);
+}
+
+.container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+a:any-link {
+    color: var(--primary-color-variant);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 1px;
+}
+
+#close {
+    display: none;
+}
+
+nav div{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(-100%);
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+nav:target div {
+    transform: translateX(0);
+    text-align: right;
+}
+
+nav:target #close {
+    display: block;
+}
+
+nav:target > a:first-child {
+    display: none;
+}
+
+nav {
+    text-align: right;
+}
+
+section {
+    background-color: rgb(195, 241, 195);
+    padding: 50px;
+    width: 1100px;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
+aside {
+    padding: 40px;
+    background-color: var(--primary-color-variant);
+}
+
+aside .perfil {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(195, 241, 195);
+    margin: auto;
+    background-image: url(imagens/saude.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.row {
+    display: block;
+    flex-direction: column-reverse;
+}

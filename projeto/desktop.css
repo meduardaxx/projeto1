@@ -1,0 +1,27 @@
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+aside {
+    flex-basis: 30%;
+}
+
+nav {
+    position: static;
+}
+
+nav > a {
+    display: none;
+}
+
+nav div {
+    transform: translateX(0);
+    flex-direction: row;
+    position: static;
+    justify-content: space-around;
+}
